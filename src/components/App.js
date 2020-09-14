@@ -1,5 +1,5 @@
 import React from 'react';
-import {SignIn} from './';
+import { SignIn } from './';
 
 function App() {
   return (
