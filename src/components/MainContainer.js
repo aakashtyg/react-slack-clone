@@ -12,7 +12,7 @@ function MainContainer(props) {
     firestore
       .collection('messages')
       .where('channel', '==', channel.id)
-      // .orderBy('created_at', 'asc')
+      .orderBy('created_at', 'asc')
       .get()
       .then((snapshot) => {
         // const channels = snapshot.docs;
