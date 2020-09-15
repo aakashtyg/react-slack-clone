@@ -1,22 +1,36 @@
-## Creating a new Project
+# Ninjas React Firebase Bootcamp
 
-Make sure you have npm and node and create-react-app tool.
+Creating a simple slack clone using React and Firebase. The Bootcamp videos can be found here on YouTube - [Part1](https://www.youtube.com/watch?v=Lu-EiHiJxLU&ab_channel=CodingNinjasIndia), [Part2](https://www.youtube.com/watch?v=a5eR-nseObE&ab_channel=CodingNinjasIndia).
 
-```
-create-react-app project-name
-```
+## Running the project
 
-OR
+- Clone the project and then start the project.
 
-```
-git clone https://github.com/aakash-cr7/react-slack-clone
-```
+  ```
+  git clone https://github.com/aakash-cr7/react-slack-clone
+  cd react-slack-clone
+  npm i
+  npm start
+  ```
 
-## Starting a project
+- Go to [firebase console](console.firebase.google.com) and create your firebase project and then choose a "Web" app to create which will give you `firebaseConfig` something like this.
 
-```
-npm start
-```
+  ```
+  const firebaseConfig = {
+    apiKey: 'your-key',
+    authDomain: 'your-domain',
+    databaseURL: 'your-db',
+    projectId: 'your-project',
+    storageBucket: 'your-storage',
+    messagingSenderId: 'your-messaging-id',
+    appId: 'your-app-id',
+  };
+
+
+  firebase.initializeApp(firebaseConfig);
+  ```
+
+  Add your firebase config to `src/firebase.js`. NOTE: Dont use the current `firebaseConfig` as it wont work as I have inoked permissions from anonymous users.
 
 ## Project Structure
 
@@ -24,8 +38,34 @@ npm start
 src
 ├── components
 │   ├── App.js
+│   ├── MainContainer.js
+│   ├── Sidebar.js
 │   ├── SignIn.js
+│   ├── Slack.js
 │   └── index.js
+├── firebase.js
 ├── index.css
-└── index.js
+├── index.js
+└── providers
+    └── UserProvider.js
 ```
+
+## Hosting the project on Firbase
+
+- For first time users, you have to donwload the `firebase-cli`.
+
+  ```
+    npm run build
+    npm i -g firebase-tools
+    firebase login
+    firebase deploy
+  ```
+
+- For second time users (who have already done the above steps).
+
+  ```
+    npm run build
+    firebase deploy
+  ```
+
+You can read more about firebase cli [here](https://firebase.google.com/docs/cli).
