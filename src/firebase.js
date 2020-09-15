@@ -29,6 +29,7 @@ export const signOut = () => {
 
 // Firestore stuff
 export const firestore = firebase.firestore();
+window.firestore = firestore;
 
 export const createOrGetUserProfileDocument = async (user, additionalData) => {
   if (!user) return;

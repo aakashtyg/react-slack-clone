@@ -98,6 +98,10 @@ code {
 #sidebar .channels-list {
   color: rgb(207, 195, 207);
 }
+#sidebar .channels-list li a {
+  color: rgb(207, 195, 207);
+  text-decoration: none;
+}
 #sidebar .channels-list li {
   padding: 7px 15px;
 }
