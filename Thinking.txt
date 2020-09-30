@@ -1,16 +1,16 @@
 1. Wireframing - Draw rough sketch of what you are actually going to build
-2. Functionality
-  * Sign in
-  * Sign up
+2.We are decomposing into small-small components.
+3. Functionality
+  * Sign in/SignUp 
   * Create a channel
   * Send message in a channel
   * Join a channel
   * Search a channel
-3. Data
+4. Data
   * users
   * channels
   * messages
-4. UI components
+5. UI components
   * Slack component
   * Sidebar
     * ListOfChannel
@@ -19,5 +19,4 @@
     * Header
     * Message
     * CreateMessage
-  * SignIn
-  * SignUp
+  * SignIn/Signup 
