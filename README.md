@@ -30,7 +30,8 @@ Creating a simple slack clone using React and Firebase. The Bootcamp videos can 
   firebase.initializeApp(firebaseConfig);
   ```
 
-  Add your firebase config to `src/firebase.js`. NOTE: Dont use the current `firebaseConfig` as it wont work as I have invoked permissions for anonymous users.
+  Add your firebase config to `src/firebase.js`. 
+  NOTE: Dont use the current `firebaseConfig` as it wont work as I have invoked permissions for anonymous users.
 
 ## Project Structure
 
